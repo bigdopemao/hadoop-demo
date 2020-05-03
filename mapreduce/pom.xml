@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>hadoop-demo</artifactId>
+        <groupId>com.mao</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>mapreduce</artifactId>
+
+    <properties>
+        <!--<java.version>1.8</java.version>-->
+        <!--<hadoopVersion>2.7.1</hadoopVersion>-->
+        <!--<hadoopVersion>2.5.0</hadoopVersion>-->
+        <!--<hadoopVersion>2.6.0</hadoopVersion>-->
+        <hadoopVersion>2.5.1</hadoopVersion>
+        <!--<hadoopVersion>2.7.8</hadoopVersion>-->
+    </properties>
+
+    <dependencies>
+        <!-- hadoop -->
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-common</artifactId>
+            <version>${hadoopVersion}</version>
+            <!--<version>2.5.1</version>-->
+            <!--<version>2.5.0</version>-->
+            <!--<version>2.7.1</version>-->
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-hdfs</artifactId>
+            <version>${hadoopVersion}</version>
+            <!--<version>2.5.1</version>-->
+            <!--<version>2.5.0</version>-->
+            <!--<version>2.7.1</version>-->
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-client</artifactId>
+            <version>${hadoopVersion}</version>
+            <!--<version>2.5.1</version>-->
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.4</version>
+            <!--<version>5.1.28</version>-->
+        </dependency>
+
+
+    </dependencies>
+
+    <build>
+        <finalName>liuliang-enhance</finalName>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                    <compilerArgs>
+                        <arg>-extdirs</arg>
+                        <arg>${project.basedir}/src/lib</arg>
+                    </compilerArgs>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+
+
+</project>
