@@ -16,7 +16,7 @@
         <!--<hadoopVersion>2.7.1</hadoopVersion>-->
         <!--<hadoopVersion>2.5.0</hadoopVersion>-->
         <!--<hadoopVersion>2.6.0</hadoopVersion>-->
-        <hadoopVersion>2.5.1</hadoopVersion>
+        <hadoopVersion>2.7.0</hadoopVersion>
         <!--<hadoopVersion>2.7.8</hadoopVersion>-->
     </properties>
 
